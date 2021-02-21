@@ -1,0 +1,17 @@
+.c-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    &__box {
+        padding: 40px;
+        font-size: 50px;
+        border: 1px solid red;
+        margin: 60px;
+        border-radius: 20px;
+        background-color: pink;
+        font-weight: bold;
+    }
+    &__box:hover {
+        cursor: pointer;
+    }
+}

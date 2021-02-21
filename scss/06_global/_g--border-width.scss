@@ -1,0 +1,16 @@
+.g--border-width {
+    @each $key in getBorderWidthKeys() {
+        &-#{$key} {
+            border-width: getBorderWidth($key);
+        }
+    }
+    @each $name in getScreensKeys() {
+        @media(min-width: getScreens($name)) {
+            @each $key in getBorderWidthKeys() {
+                &-#{$key}\@#{$name} {
+                    border-width: getBorderWidth($key);
+                }
+            }
+        }
+    }
+}

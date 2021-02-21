@@ -1,0 +1,23 @@
+@function getBorderWidthKeys() {
+    @return map-keys($border-width);
+}
+
+@function getBorderWidth($key) {
+    @return unquote(map-get($border-width, $key));
+}
+
+@function getScreensKeys() {
+    @return map-keys($screens);
+}
+
+@function getScreens($key) {
+    @return unquote(map-get($screens, $key));
+}
+
+@function getWidthsKeys() {
+    @return map-keys($width);
+}
+
+@function getWidth($key) {
+    @return unquote(map-get($width, $key));
+}
